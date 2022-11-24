@@ -35,7 +35,7 @@ function Home() {
                 className={styles.oeuf}
               />
               <div className={styles.names}>
-                <p className={styles.nom}>{user.username}</p>
+                <p className={styles.nom}>{user.firstname}</p>
                 <p className={styles.tweetName}>@{user.username}</p>
               </div>
             </div>

@@ -29,17 +29,21 @@
 }
 
 .like {
+    display: flex;
+    align-items: center;
     color: rgb(255, 59, 59);
     margin-top: 10px;
 }
 
 .counter {
     color: white;
+    margin-left: 10px;
 }
 
 .likeDelete {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    border: solid red 1px;
 }

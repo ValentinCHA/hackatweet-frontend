@@ -31,7 +31,7 @@ console.log("USER =>", user);
           }).then(response => response.json())
             .then(data => {
               if (data.result) {
-                dispatch(login({ username: signUpUserName, token: data.token }));
+                dispatch(login({ username: signUpUserName, token: data.token, firstname: firstName }));
                 setSignUpUserName('');
                 setSignUpPassword('');
                 setFirstName('');
@@ -51,7 +51,9 @@ console.log("USER =>", user);
             console.log("RESULT", data.result);
             console.log("ERROR ?", data.error);
             if (data.result) {
-              dispatch(login({ username: signInUserName, token: data.token }));
+              dispatch(login({ username: signInUserName, token: data.token, firstname: data.firstname }));
+              console.log("DATA FIRSTNAME =>", data.firstname);
+              console.log("DATA", data);
               setSignInUserName('');
               setSignInPassword('');
               window.location.href = "http://localhost:3001/accueil";
