@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'montFont';
+    src: url(../public/fonts/mont-heavy.ttf) format('truetype');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+.container {
+    display: flex;
+    font-family: 'montFont';
+    position: relative;
+}
+
+.tweet {
+    background: none;
+    height: 100vh;
+}
+
+.left {
+    height: 100vh;
+    width: 680px;
+}
+
+.rigth {
+    height: 100px;
+}
+
+.containerRight {
+    display: block;
+    margin: 10px 30px;
+}
+
+.title {
+    color: white;
+}
+
+.title h1 {
+    font-size: 5rem;
+}
+
+.title p {
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.button {
+    background: transparent;
+    color: rgb(2, 132, 252);
+    border: 1px solid grey;
+    border-radius: 18px;
+    padding: 10px;
+    width: 45%;
+    transition: .5s;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.button:hover {
+    background: rgb(2, 132, 252);
+    color: white;
+}
+
+.containerButton {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.containerButton p {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/********************** FENETRE SIGNIN ********************/
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    position: absolute;
+    top: 10%;
+    left: 32%;
+    width: 500px;
+    background: rgb(17, 26, 33);
+    color: white;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 20px;
+}
+
+.tweetInv {
+    height: 90px;
+    width: 90px;
+    margin: -30px;
+}
+
+.inputSignup {
+    background: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid grey;
+    outline: none;
+    color: rgb(238, 235, 235);
+}
+
+.buttonSignup {
+    background: white;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 18px;
+    padding: 8px;
+    width: 45%;
+    transition: .5s;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 5px;
+}
