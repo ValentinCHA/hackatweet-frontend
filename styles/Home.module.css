@@ -1,22 +1,135 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 4rem 0;
-}
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  border: solid blue 1px; 
+  height: 100vh;
+  width: 100vw;
+  }
+  
+  .div1 { 
+    grid-area: 1 / 1 / 14 / 4;
+    border-right: grey 1px solid; 
+  }
+  .div2 { grid-area: 1 / 9 / 14 / 14; 
+    border: solid red 1px;
+  }
+  .div3 { grid-area: 1 / 4 / 4 / 9; 
+    border-right: grey 1px solid; 
+    border-bottom: grey 1px solid; ;
+  }
+  .div4 { grid-area: 4 / 4 / 14 / 9;
+    border-right: grey 1px solid; 
+  }
 
-.title {
-  line-height: 1.15;
-  font-size: 4rem;
-}
+  .logo {
+    margin-left: 15px;
+    margin-top: 10px;
+  }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
+  .footerLeft {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    margin-top: 72vh;
+    margin-left: 30px;
+  }
 
-.title a:hover, .title a:focus, .title a:active {
-  text-decoration: underline;
-}
+  .oeuf {
+    height: 70px;
+    border-radius: 50%;
+  }
+
+  .names {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 10px;
+  }
+
+  .nom {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .tweetName {
+    color: gray;
+  }
+
+  .footerBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    margin-left: 30px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    width: 30%;
+    border-radius: 18px;
+    border: solid white 1px;
+    transition: .5s;
+  }
+
+  .footerBtn:hover {
+    background: rgb(56, 56, 56);
+  }
+
+  .homeTxt {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    margin-left: 4%;
+    margin-top: 2%;
+  }
+
+  .tweetContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 60%;
+    background: transparent;
+    border: none;
+    border-bottom: solid grey 1px;
+    font-size: 21px;
+    outline: none;
+    color: white;
+  }
+
+  .tweetDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40%;
+  }
+
+  .counter {
+    color: white;
+    font-size: 17px;
+    margin-right: 3%;
+  }
+
+  .counterContainer {
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-end;
+    align-items: center;
+    height: 25%;
+    margin-right: 9%;
+  }
+
+  .tweetBtn {
+    color: white;
+    border-radius: 18px;
+    height: 70%;
+    width: 6.5vw;
+    background-color: rgb(2, 132, 252);
+    font-size: 18px;
+    font-weight: bold;
+  }

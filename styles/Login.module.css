@@ -54,6 +54,7 @@
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
+    margin-top: 20px;
 }
 .button:hover {
     background: rgb(2, 132, 252);
@@ -93,6 +94,7 @@
     right: 15px;
     top: 5px;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .tweetInv {
@@ -123,4 +125,23 @@
     font-size: 16px;
     cursor: pointer;
     margin-top: 5px;
+}
+
+.button1 {
+    background: rgb(2, 132, 252);
+    color: white;
+    border: 1px solid grey;
+    border-radius: 18px;
+    padding: 10px;
+    width: 45%;
+    transition: .5s;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.button1:hover {
+    background: rgb(32, 32, 150);
 }

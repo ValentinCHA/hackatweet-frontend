@@ -1,0 +1,45 @@
+.name {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.tweetContainer {
+    padding: 20px;
+    height: 24%;
+    border-bottom: solid grey 1px;
+}
+
+.headerTweet {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.afterName {
+    color: grey;
+    font-size: 15px;
+}
+
+.tweetDesc {
+    color: white;
+    margin-top: 3%;
+}
+
+.like {
+    color: rgb(255, 59, 59);
+    margin-top: 10px;
+}
+
+.counter {
+    color: white;
+}
+
+.likeDelete {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
